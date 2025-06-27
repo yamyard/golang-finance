@@ -4,5 +4,4 @@
 Now supporting retrieval of historical stock price data from Yahoo Finance.
 
 ## Example
-See below:
-[example/main.go](https://github.com/yamyard/golang-finance/blob/main/example/main.go)
+See [example/main.go](https://github.com/yamyard/golang-finance/blob/main/example/main.go)
