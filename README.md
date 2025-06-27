@@ -4,4 +4,4 @@
 Now supporting retrieval of historical stock price data from Yahoo Finance.
 
 ## Example
-See [example/main.go](https://github.com/yamyard/golang-finance/blob/main/example/main.go)
+[Type the date and start time, then you can get the corresponding stock's open, high, low, close, volume etc.](https://github.com/yamyard/golang-finance/blob/main/example/main.go)
