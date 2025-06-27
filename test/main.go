@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/yamyard/golang-finance"
+	"golang-finance/yahoo"
 )
 
 func main() {
