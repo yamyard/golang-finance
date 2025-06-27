@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
+	"time"
 
-	"golang-finance/yahoo"
+	"github.com/yamyard/golang-finance/yahoo"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 	}
 	for i, ts := range data.Chart.Result[0].Timestamp {
 		close := data.Chart.Result[0].Indicators.Quote[0].Close[i]
-		fmt.Printf("Timestamp: %d, Close Price: %f\n", ts, close)
+		t := time.Unix(ts, 0)
+		fmt.Printf("Date: %s, Close Price: %.2f\n", t.Format("2006-01-02"), close)
 	}
 }
