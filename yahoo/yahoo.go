@@ -11,19 +11,19 @@ import (
 type ChartResponse struct {
     Chart struct {
         Result []struct {
-			// 时间戳（秒级）
+	    // 时间戳（秒级）
             Timestamp []int64 `json:"timestamp"`
             Indicators struct {
                 Quote []struct {
-					// 收盘价
+		    // 收盘价
                     Close  []float64 `json:"close"`
-					// 开盘价
+		    // 开盘价
                     Open   []float64 `json:"open"`
-					// 最高价
+		    // 最高价
                     High   []float64 `json:"high"`
-					// 最低价
+		    // 最低价
                     Low    []float64 `json:"low"`
-					// 成交量
+		    // 成交量
                     Volume []int64   `json:"volume"`
                 } `json:"quote"`
             } `json:"indicators"`
