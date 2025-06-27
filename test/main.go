@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"log"
+
+	"github.com/yamyard/golang-finance"
+)
+
+func main() {
+	data, err := yahoo.GetHistory("AAPL", "1d", "5d")
+	if err != nil {
+		log.Fatal(err)
+	}
+	for i, ts := range data.Chart.Result[0].Timestamp {
+		close := data.Chart.Result[0].Indicators.Quote[0].Close[i]
+		fmt.Printf("Timestamp: %d, Close Price: %f\n", ts, close)
+	}
+}
